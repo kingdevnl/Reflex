@@ -1,0 +1,10 @@
+rootProject.name = 'Reflex'
+
+include(":Common")
+include(":Client")
+include(":Server")
+
+
+project(":Common").setName("Reflex-Common")
+project(":Client").setName("Reflex-Client")
+project(":Server").setName("Reflex-Server")

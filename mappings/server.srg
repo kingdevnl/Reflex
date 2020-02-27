@@ -1,0 +1,819 @@
+CL: a net/minecraft/server/network/packet/UseEntityPacket
+CL: aa net/minecraft/server/client/sound/step/StoneStepSound
+CL: ab net/minecraft/server/world/generator/PerlinNoiseGenerator
+CL: ac net/minecraft/server/world/MaterialLogic
+CL: ad net/minecraft/server/world/generator/TallGrassWorldGenerator
+CL: ae net/minecraft/server/entity/WaterEntity
+CL: af net/minecraft/server/command/ServerCommand
+CL: ag net/minecraft/server/util/CompressedStreamTools
+CL: ah net/minecraft/server/item/Pickaxe
+CL: ai net/minecraft/server/map/MapCoord
+CL: aj net/minecraft/server/world/SkyWorldProvider
+CL: ak net/minecraft/server/block/tile/DispenserTileEntity
+CL: al net/minecraft/server/item/BucketItem
+CL: am net/minecraft/server/world/generator/FlowerWorldGenerator
+CL: an net/minecraft/server/world/chunk/AbstractChunkLoader
+CL: ao net/minecraft/server/entity/AnimalEntity
+CL: ap net/minecraft/server/item/ClothItem
+CL: aq net/minecraft/server/entity/SpawnListEntry
+CL: ar net/minecraft/server/block/LeafBlock
+CL: as net/minecraft/server/item/ShearsItem
+CL: at net/minecraft/server/achievement/DistanceStatType
+CL: au net/minecraft/server/container/FurnaceContainer
+CL: av net/minecraft/server/achievement/TimeStatType
+CL: aw net/minecraft/server/entity/GhastEntity
+CL: ax net/minecraft/server/achievement/SimpleStatType
+CL: ay net/minecraft/server/world/chunk/ChunkCoordinates
+CL: az net/minecraft/server/block/RedstoneOreBlock
+CL: b net/minecraft/server/achievement/AchievementMap
+CL: ba net/minecraft/server/util/Vec3D
+CL: bb net/minecraft/server/item/ToolMaterial
+CL: bc net/minecraft/server/block/PressurePlateBlock
+CL: bd net/minecraft/server/entity/CowEntity
+CL: be net/minecraft/server/entity/SnowballEntity
+CL: bf net/minecraft/server/item/SoupItem
+CL: bg net/minecraft/server/network/packet/BedPacket
+CL: bh net/minecraft/server/container/ChestContainer
+CL: bi net/minecraft/server/world/generator/NoiseGenerator2
+CL: bj net/minecraft/server/entity/FireballEntity
+CL: bk net/minecraft/server/item/ItemBlock
+CL: bl net/minecraft/server/world/chunk/ChunkProvider
+CL: bm net/minecraft/server/world/chunk/ChunkFolderPattern
+CL: bn net/minecraft/server/entity/SpiderEntity
+CL: bo net/minecraft/server/item/AbstractMapItem
+CL: bp net/minecraft/server/world/AnimalSpawner
+CL: bq net/minecraft/server/ServerApplicationThread
+CL: br net/minecraft/server/ConvertProgressUpdater
+CL: bs net/minecraft/server/command/CommandReaderThread
+CL: bt net/minecraft/server/util/FrozenThread
+CL: bu net/minecraft/server/client/sound/StepSound
+CL: bv net/minecraft/server/item/FishingRodItem
+CL: bw net/minecraft/server/util/Status
+CL: bx net/minecraft/server/block/tileentity/MobSpawnerTileEntity
+CL: by net/minecraft/server/block/RedstoneTorchBlock
+CL: bz net/minecraft/server/block/MobSpawnerBlock
+CL: c net/minecraft/server/entity/LightningBoltEntity
+CL: ca net/minecraft/server/world/generator/NoiseGenerator
+CL: cb net/minecraft/server/entity/pathfinding/EntityPath
+CL: cc net/minecraft/server/network/packet/CollectPacket
+CL: cd net/minecraft/server/world/generator/LakeGenerator
+CL: ce net/minecraft/server/entity/SheepEntity
+CL: cf net/minecraft/server/item/SnowBallItem
+CL: cg net/minecraft/server/block/LadderBlock
+CL: ch net/minecraft/server/achievement/StatCollector
+CL: ci net/minecraft/server/gui/GuiLogOutputHandler
+CL: cj net/minecraft/server/item/Tool
+CL: ck net/minecraft/server/crafting/Recipe
+CL: cl net/minecraft/server/container/Container
+CL: cm net/minecraft/server/world/MapColor
+CL: cn net/minecraft/server/world/chunk/ChunkFile
+CL: co net/minecraft/server/unknown/SkyBlock
+CL: cp net/minecraft/server/crafting/Crafter
+CL: cq net/minecraft/server/block/WoolBlock
+CL: cr net/minecraft/server/block/tileentity/JukeboxTileEntity
+CL: cs net/minecraft/server/network/packet/MapChunkPacket
+CL: ct net/minecraft/server/world/WorldInfo
+CL: cu net/minecraft/server/network/NetworkListenThread
+CL: cv net/minecraft/server/LoginVerifierThread
+CL: cw net/minecraft/server/item/SlabItem
+CL: cx net/minecraft/server/block/StoneBlock
+CL: cy net/minecraft/server/achievement/AchievementList
+CL: cz net/minecraft/server/client/render/AxisAlignedBB
+CL: d net/minecraft/server/entity/pathfinding/PathPoint
+CL: da net/minecraft/server/world/generator/DungeonWorldGenerator
+CL: db net/minecraft/server/network/packet/UpdateHealthPacket
+CL: dc net/minecraft/server/network/packet/PlayerPositionRotationPacket
+CL: dd net/minecraft/server/world/chunk/ChunkCache
+CL: de net/minecraft/server/crafting/FurnaceRecipes
+CL: df net/minecraft/server/network/packet/WeatherPacket
+CL: dg net/minecraft/server/entity/UpdatePlayerListBox
+CL: dh net/minecraft/server/block/ObsidianBlock
+CL: di net/minecraft/server/block/PumpkinBlock
+CL: dj net/minecraft/server/world/World
+CL: dk net/minecraft/server/entity/IEntity
+CL: dl net/minecraft/server/entity/PlayerEntityMP
+CL: dm net/minecraft/server/world/WorldManager
+CL: dn net/minecraft/server/block/CraftingTableBlock
+CL: do net/minecraft/server/block/GlassBlock
+CL: dp net/minecraft/server/world/ServerWorld
+CL: dq net/minecraft/server/entity/PlayerNBTManager
+CL: dr net/minecraft/server/world/generator/MineableWorldGenerator
+CL: ds net/minecraft/server/network/packet/DoorUpdatePacket
+CL: dt net/minecraft/server/block/JukeboxBlock
+CL: du net/minecraft/server/client/chat/ChatAllowedCharacters
+CL: dv net/minecraft/server/entity/SkeletonEntity
+CL: dw net/minecraft/server/world/generator/DesertBiomeGenerator
+CL: dx net/minecraft/server/entity/PlayerHash
+CL: dy net/minecraft/server/world/generator/BaseMapGenerator
+CL: dz net/minecraft/server/entity/pathfinding/Pathfinder
+CL: e net/minecraft/server/block/ChestBlock
+CL: ea net/minecraft/server/world/generator/CactusWorldGenerator
+CL: eb net/minecraft/server/entity/BoatEntity
+CL: ec net/minecraft/server/entity/CreeperEntity
+CL: ed net/minecraft/server/world/generator/GlowstoneGenerator1
+CL: ee net/minecraft/server/network/ServerLoginHandler
+CL: ef net/minecraft/server/network/packet/EntityVelocityPacket
+CL: eg net/minecraft/server/world/WorldServerMP
+CL: eh net/minecraft/server/entity/WolfEntity
+CL: ei net/minecraft/server/block/SandBlock
+CL: ej net/minecraft/server/item/Item
+CL: ek net/minecraft/server/item/LogItem
+CL: el net/minecraft/server/inventory/Slot
+CL: em net/minecraft/server/entity/PlayerEntity
+CL: en net/minecraft/server/unknown/Empty1
+CL: eo net/minecraft/server/network/packet/PlaceBlockPacket
+CL: ep net/minecraft/server/entity/Mob
+CL: eq net/minecraft/server/crafting/ToolRecipes
+CL: er net/minecraft/server/block/BookshelfBlock
+CL: es net/minecraft/server/world/map/MapStorage
+CL: et net/minecraft/server/world/NetherChunkManager
+CL: eu net/minecraft/server/block/SaplingBlock
+CL: ev net/minecraft/server/gui/ConsoleLogManager
+CL: ew net/minecraft/server/network/packet/UpdateTimePacket
+CL: ex net/minecraft/server/world/SaveConverterMcRegion
+CL: ey net/minecraft/server/crafting/CraftingManager
+CL: ez net/minecraft/server/entity/ItemEntity
+CL: f net/minecraft/server/world/generator/TaigaBiomeGenerator
+CL: fa net/minecraft/server/world/map/MapDataBase
+CL: fb net/minecraft/server/nbt/NBTTagByteArray
+CL: fc net/minecraft/server/ServerConfigurationManager
+CL: fd net/minecraft/server/network/packet/BlockItemSwitchPacket
+CL: fe net/minecraft/server/network/packet/SetSlotPacket
+CL: ff net/minecraft/server/entity/EntityTrackerEntry
+CL: fg net/minecraft/server/item/DoorItem
+CL: fh net/minecraft/server/world/RegionFileChunkBuffer
+CL: fi net/minecraft/server/gui/GuiLogFormatter
+CL: fj net/minecraft/server/unknown/Empty2
+CL: fk net/minecraft/server/item/RedstoneItem
+CL: fl net/minecraft/server/entity/AbstractPlayerManager
+CL: fm net/minecraft/server/network/packet/FlyingPacket
+CL: fn net/minecraft/server/world/generator/BigTreeGenerator
+CL: fo net/minecraft/server/nbt/NBTBase
+CL: fp net/minecraft/server/entity/Creature
+CL: fq net/minecraft/server/util/MathHelper
+CL: fr net/minecraft/server/world/Art
+CL: fs net/minecraft/server/world/generator/SugarcaneGenerator
+CL: ft net/minecraft/server/crafting/ShapedRecipes
+CL: fu net/minecraft/server/container/CraftingTableContainer
+CL: fv net/minecraft/server/world/map/MapData
+CL: fw net/minecraft/server/network/packet/OpenWindowPacket
+CL: fx net/minecraft/server/inventory/PlayerInventory
+CL: fy net/minecraft/server/inventory/ItemStack
+CL: fz net/minecraft/server/block/DeadShrubBlock
+CL: g net/minecraft/server/block/PistonExtensionBlock
+CL: ga net/minecraft/server/entity/EntityList
+CL: gb net/minecraft/server/world/chunk/SkyChunkProvider
+CL: gc net/minecraft/server/network/packet/EntityStatusPacket
+CL: gd net/minecraft/server/entity/MovingObjectType
+CL: ge net/minecraft/server/client/render/model/BedModel
+CL: gf net/minecraft/server/network/packet/EntitySpawnPacket
+CL: gg net/minecraft/server/achievement/StatList
+CL: gh net/minecraft/server/block/BreakableBlock
+CL: gi net/minecraft/server/block/PistonBaseBlock
+CL: gj net/minecraft/server/block/SnowBlock
+CL: gk net/minecraft/server/block/tileentity/ChestTileEntity
+CL: gl net/minecraft/server/entity/FallingSandEntity
+CL: gm net/minecraft/server/network/packet/BlockDigPacket
+CL: gn net/minecraft/server/block/FenceBlock
+CL: gp net/minecraft/server/crafting/CraftingRecipes
+CL: gq net/minecraft/server/network/packet/SleepPacket
+CL: gr net/minecraft/server/network/packet/WindowItemPacket
+CL: gs net/minecraft/server/world/generator/BiomeGenerator
+CL: gt net/minecraft/server/network/packet/Packet
+CL: gu net/minecraft/server/item/DyeItem
+CL: gv net/minecraft/server/block/LockedChestBlock
+CL: gw net/minecraft/server/world/generator/DeadShrubGenerator
+CL: gx net/minecraft/server/crafting/RecipeSorter
+CL: gy net/minecraft/server/gui/StatGuiComponent
+CL: gz net/minecraft/server/item/HoeItem
+CL: h net/minecraft/server/world/generator/ForestGenerator
+CL: ha net/minecraft/server/network/ServerNetHandler
+CL: hb net/minecraft/server/world/McRegionChunkLoader
+CL: hc net/minecraft/server/block/DoorBlock
+CL: hd net/minecraft/server/entity/pathfinding/Path
+CL: he net/minecraft/server/world/RegionFileCache2
+CL: hf net/minecraft/server/nbt/NBTTagEnd
+CL: hg net/minecraft/server/world/EmptyChunk
+CL: hh net/minecraft/server/entity/CreatureType
+CL: hi net/minecraft/server/world/chunk/Chunk
+CL: hj net/minecraft/server/block/Material
+CL: hk net/minecraft/server/item/BedItem
+CL: hl net/minecraft/server/entity/LivingEntity
+CL: hm net/minecraft/server/gui/StatGuiListener
+CL: hn net/minecraft/server/item/SugarcaneItem
+CL: ho net/minecraft/server/block/TransparentMaterial
+CL: hp net/minecraft/server/inventory/Inventory
+CL: hq net/minecraft/server/entity/FishEntity
+CL: hr net/minecraft/server/block/GlowstoneBlock
+CL: hs net/minecraft/server/network/packet/KeepAlivePacket
+CL: ht net/minecraft/server/util/WatchableObject
+CL: hu net/minecraft/server/network/packet/NamedEntitySpawnPacket
+CL: hv net/minecraft/server/nbt/NBTTagLong
+CL: hw net/minecraft/server/network/packet/CloseWindowPacket
+CL: hx net/minecraft/server/item/EggItem
+CL: hy net/minecraft/server/network/packet/HandshakePacket
+CL: hz net/minecraft/server/crafting/CraftingInventory
+CL: i net/minecraft/server/entity/PlayerListBox
+CL: ia net/minecraft/server/item/SaplingItem
+CL: ib net/minecraft/server/world/generator/ClayGenerator
+CL: ic net/minecraft/server/block/OreBlock
+CL: id net/minecraft/server/network/packet/UpdateProgressBarPacket
+CL: ie net/minecraft/server/world/ServerSaveHandler
+CL: if net/minecraft/server/network/packet/ItemSpawnPacket
+CL: ig net/minecraft/server/block/GravelBlock
+CL: ih net/minecraft/server/crafting/DyeRecipes
+CL: ii net/minecraft/server/util/StringTranslator
+CL: ij net/minecraft/server/block/CropBlock
+CL: ik net/minecraft/server/block/IceBlock
+CL: il net/minecraft/server/world/SaveFormat
+CL: im net/minecraft/server/network/packet/AnimationPacket
+CL: in net/minecraft/server/block/LeafBaseBlock
+CL: io net/minecraft/server/network/packet/AttachEntityPacket
+CL: ip net/minecraft/server/entity/GiantZombieEntity
+CL: iq net/minecraft/server/nbt/NBTTagCompound
+CL: ir net/minecraft/server/network/PacketCounter
+CL: is net/minecraft/server/block/StaionaryBlock
+CL: it net/minecraft/server/achievement/Achievement
+CL: iu net/minecraft/server/block/SoulSandBlock
+CL: iv net/minecraft/server/network/packet/LoginPacket
+CL: iw net/minecraft/server/crafting/FoodRecipes
+CL: ix net/minecraft/server/network/packet/StatisticPacket
+CL: iy net/minecraft/server/inventory/LargeChestInventory
+CL: iz net/minecraft/server/block/ButtonBlock
+CL: j net/minecraft/server/world/OreStorage
+CL: ja net/minecraft/server/network/packet/TransactionPacket
+CL: jb net/minecraft/server/world/chunk/AbstractChunkProvider
+CL: jc net/minecraft/server/block/FlowingBlock
+CL: jd net/minecraft/server/block/TrapDoorBlock
+CL: je net/minecraft/server/block/CactusBlock
+CL: jf net/minecraft/server/block/DirtBlock
+CL: jg net/minecraft/server/world/PortalMaterial
+CL: jh net/minecraft/server/block/tileentity/TileEntity
+CL: ji net/minecraft/server/network/packet/RespawnPacket
+CL: jj net/minecraft/server/block/RailBlock
+CL: jk net/minecraft/server/network/packet/ChatPacket
+CL: jl net/minecraft/network/ServerNetworkManager
+CL: jm net/minecraft/server/world/generator/WorldGenerator
+CL: jn net/minecraft/server/block/DetectorRailBlock
+CL: jo net/minecraft/server/world/generator/NetherCaveGenerator
+CL: jp net/minecraft/server/world/WorldAccess
+CL: jq net/minecraft/server/nbt/NBTTagInt
+CL: jr net/minecraft/server/block/NoteBlock
+CL: js net/minecraft/server/inventory/ArmorSlot
+CL: jt net/minecraft/server/world/generator/TaigaGenerator1
+CL: ju net/minecraft/server/network/packet/RelativeEntityPositionRotationPacket
+CL: jv net/minecraft/server/world/generator/NetherLavaGenerator
+CL: jw net/minecraft/server/item/SwordItem
+CL: jx net/minecraft/server/world/RegionFile
+CL: jy net/minecraft/server/item/CookieItem
+CL: jz net/minecraft/server/network/packet/PositionPacket
+CL: k net/minecraft/server/nbt/NBTTagFloat
+CL: ka net/minecraft/server/world/chunk/NetherChunkProvider
+CL: kb net/minecraft/server/nbt/NBTTagByte
+CL: kc net/minecraft/server/item/PistonItem
+CL: kd net/minecraft/server/entity/PlayerHashEntry
+CL: ke net/minecraft/server/network/packet/WindowClickPacket
+CL: kf net/minecraft/server/entity/PaintingEntity
+CL: kg net/minecraft/server/entity/PrimedTntEntity
+CL: kh net/minecraft/server/client/render/Explosion
+CL: ki net/minecraft/server/world/NextTickListEntry
+CL: kj net/minecraft/server/item/BowItem
+CL: kk net/minecraft/server/world/generator/ForestBiomeGenerator
+CL: kl net/minecraft/server/block/SandStoneBlock
+CL: km net/minecraft/server/network/packet/SpawnPositionPacket
+CL: kn net/minecraft/server/network/packet/EntityTeleportPacket
+CL: ko net/minecraft/server/block/SugarcaneBlock
+CL: kp net/minecraft/server/world/SurfaceProvider
+CL: kq net/minecraft/server/world/RegionFileCache
+CL: kr net/minecraft/server/item/SeedItem
+CL: ks net/minecraft/server/item/MinecartItem
+CL: kt net/minecraft/server/network/packet/ExplosionPacket
+CL: ku net/minecraft/server/block/CobwebBlock
+CL: kv net/minecraft/server/block/FluidBlock
+CL: kw net/minecraft/server/world/ChunkFilePattern
+CL: kx net/minecraft/server/entity/MobType
+CL: ky net/minecraft/server/PropertyManager
+CL: kz net/minecraft/server/block/TallGrassBlock
+CL: l net/minecraft/server/network/packet/PlayerInventoryPacket
+CL: la net/minecraft/server/network/packet/DestroyEntityPacket
+CL: lb net/minecraft/server/container/BlockContainer
+CL: lc net/minecraft/server/item/CoalItem
+CL: ld net/minecraft/server/network/NetworkAcceptThread
+CL: le net/minecraft/server/world/generator/SkyBiomeGenerator
+CL: lf net/minecraft/server/block/ClayBlock
+CL: lg net/minecraft/server/item/SaddleItem
+CL: lh net/minecraft/server/network/packet/EntityRotationPacket
+CL: li net/minecraft/server/network/paticle/PreChunkPacket
+CL: lj net/minecraft/server/world/generator/GlowstoneGenerator2
+CL: lk net/minecraft/server/world/LiquidMaterial
+CL: ll net/minecraft/server/container/DispenserContainer
+CL: lm net/minecraft/server/world/MapInfo
+CL: ln net/minecraft/server/block/tileentity/FurnaceTileEntity
+CL: lo net/minecraft/server/block/RedstoneWireBlock
+CL: lp net/minecraft/server/entity/ArrowEntity
+CL: lq net/minecraft/server/entity/Entity
+CL: lr net/minecraft/server/nbt/NBTTagList
+CL: ls net/minecraft/server/network/packet/VehicleSpawnPacket
+CL: lt net/minecraft/server/world/MapCaveGenerator
+CL: lu net/minecraft/server/block/StairBlock
+CL: lv net/minecraft/server/world/chunk/ChunkBlockMetadata
+CL: lw net/minecraft/server/network/packet/RelativeEntityPositionPacket
+CL: lx net/minecraft/server/nbt/NBTTagDouble
+CL: ly net/minecraft/server/item/AxeItem
+CL: lz net/minecraft/server/block/FurnaceBlock
+CL: m net/minecraft/server/world/generator/NetherBiome
+CL: ma net/minecraft/server/world/generator/SwampBiomeGenerator
+CL: mb net/minecraft/server/command/CommandListener
+CL: mc net/minecraft/server/command/ConsoleCommandHandler
+CL: md net/minecraft/server/block/MushroomBlock
+CL: me net/minecraft/server/network/NetHandler
+CL: mf net/minecraft/server/block/tileentity/NoteTileEntity
+CL: mg net/minecraft/server/world/chunk/ChunkLoader
+CL: mh net/minecraft/server/crafting/IngotRecipe
+CL: mi net/minecraft/server/world/OldSaveFormat
+CL: mj net/minecraft/server/item/RecordItem
+CL: mk net/minecraft/server/network/packet/EntityActionPacket
+CL: ml net/minecraft/server/crafting/ShapelessRecipe
+CL: mm net/minecraft/server/achievement/CraftingStat
+CL: mn net/minecraft/server/network/packet/BlockChangePacket
+CL: mo net/minecraft/server/util/DataWatcher
+CL: mp net/minecraft/server/world/generator/OctaveNoiseGenerator
+CL: mq net/minecraft/server/world/generator/OctaveNoiseGenerator2
+CL: mr net/minecraft/server/network/packet/EntityPacket
+CL: ms net/minecraft/server/network/packet/UpdateSignPacket
+CL: mt net/minecraft/server/block/SignBlock
+CL: mu net/minecraft/server/block/tileentity/PistonTileEntity
+CL: mv net/minecraft/server/nbt/NBTTagShort
+CL: mw net/minecraft/server/block/CakeBlock
+CL: mx net/minecraft/server/world/Teleporter
+CL: my net/minecraft/server/util/MinecraftException
+CL: mz net/minecraft/server/block/MovingPistonBlock
+CL: n net/minecraft/server/crafting/ArmorRecipes
+CL: na net/minecraft/server/block/Block
+CL: nb net/minecraft/server/entity/SlimeEntity
+CL: nc net/minecraft/server/network/packet/EntityMetadataPacket
+CL: nd net/minecraft/server/item/LeafItem
+CL: ne net/minecraft/server/entity/ZombieEntity
+CL: nf net/minecraft/server/gui/ServerGui
+CL: ng net/minecraft/server/item/SignItem
+CL: nh net/minecraft/server/world/MovingObjectPosition
+CL: ni net/minecraft/server/item/BoatItem
+CL: nj net/minecraft/server/block/BedBlock
+CL: nk net/minecraft/server/block/LogBlock
+CL: nl net/minecraft/server/entity/EntityTracker
+CL: nm net/minecraft/server/network/packet/PlayerRotationPacket
+CL: nn net/minecraft/server/world/chunk/ChunkBlockMap
+CL: no net/minecraft/server/block/FarmlandBlock
+CL: np net/minecraft/server/block/TorchBlock
+CL: nq net/minecraft/server/world/RailLogic
+CL: nr net/minecraft/server/crafting/FurnaceSlot
+CL: ns net/minecraft/server/achievement/AbstractStat
+CL: nt net/minecraft/server/network/packet/PaintingEntityPacket
+CL: nu net/minecraft/server/entity/EggEntity
+CL: nv net/minecraft/server/network/packet/PlayNoteBlockPacket
+CL: nw net/minecraft/server/block/FlowerBlock
+CL: nx net/minecraft/server/item/ArmorItem
+CL: ny net/minecraft/server/item/ShovelItem
+CL: nz net/minecraft/server/world/NetherProvider
+CL: o net/minecraft/server/container/PlayerContainer
+CL: oa net/minecraft/server/world/chunk/ChunkPosition
+CL: ob net/minecraft/server/util/NibbleArray
+CL: oc net/minecraft/server/entity/PigEntity
+CL: od net/minecraft/server/client/render/PistonBlockTextures
+CL: oe net/minecraft/server/achievement/StatType
+CL: of net/minecraft/server/crafting/InventoryCraftResult
+CL: og net/minecraft/server/util/MCHashEntry
+CL: oh net/minecraft/server/gui/ConsoleLogFormatter
+CL: oi net/minecraft/server/block/RedstoneRepeaterBlockz
+CL: oj net/minecraft/server/block/GrassBlock
+CL: ok net/minecraft/server/entity/FlyingEntity
+CL: ol net/minecraft/server/item/MapItem
+CL: om net/minecraft/server/world/AbstractSaveHandler
+CL: on net/minecraft/server/world/generator/TaigaGenerator2
+CL: oo net/minecraft/server/entity/PlayerManager
+CL: op net/minecraft/server/world/generator/PumpkinGenerator
+CL: oq net/minecraft/server/network/packet/MultiBlockChangePacket
+CL: or net/minecraft/server/entity/ChickenEntity
+CL: os net/minecraft/server/world/WorldProvider
+CL: ot net/minecraft/server/crafting/WeaponRecipes
+CL: ou net/minecraft/server/nbt/NBTTagString
+CL: ov net/minecraft/server/block/SpongeBlock
+CL: ow net/minecraft/network/ServerNetworkMasterThread
+CL: ox net/minecraft/server/MonitorConnectionThread
+CL: oy net/minecraft/network/ServerNetworkReaderThread
+CL: oz net/minecraft/network/ServerNetworkWriterThread
+CL: p net/minecraft/server/block/FullSnowBlock
+CL: pa net/minecraft/server/block/DispenserBlock
+CL: pb net/minecraft/server/world/BlockAccess
+CL: pc net/minecraft/server/world/generator/LiquidGenerator
+CL: pd net/minecraft/server/block/LeverBlock
+CL: pe net/minecraft/server/world/generator/FireGenerator
+CL: pf net/minecraft/server/entity/SquidEntity
+CL: pg net/minecraft/server/world/RedstoneUpdateInfo
+CL: ph net/minecraft/server/world/WorldChunkManager
+CL: pi net/minecraft/server/entity/PigZombieEntity
+CL: pj net/minecraft/server/client/gui/ProgressUpdate
+CL: pk net/minecraft/server/world/chunk/ChunkGeneratorProvider
+CL: pl net/minecraft/server/item/FlintAndSteelItem
+CL: pm net/minecraft/server/achievement/Stat
+CL: pn net/minecraft/server/world/generator/TreeGenerator
+CL: po net/minecraft/server/block/NetherrackBlock
+CL: pp net/minecraft/server/world/generator/RainforestBiomeGenerator
+CL: pq net/minecraft/server/block/tileentity/SignTileEntity
+CL: pr net/minecraft/server/entity/MinecartEntity
+CL: ps net/minecraft/server/item/PaintingItem
+CL: pt net/minecraft/server/block/FireBlock
+CL: pu net/minecraft/server/ItemEntityManager
+CL: pv net/minecraft/server/network/packet/KickDisconnectPacket
+CL: pw net/minecraft/server/block/SlabBlock
+CL: px net/minecraft/server/item/FoodItem
+CL: py net/minecraft/server/crafting/CraftingSlot
+CL: pz net/minecraft/server/entity/WeatherEffectEntity
+CL: q net/minecraft/server/gui/ServerWindowAdapter
+CL: qa net/minecraft/server/world/chunk/ChunkCoord
+CL: r net/minecraft/server/gui/ServerGuiCommandListener
+CL: s net/minecraft/server/gui/ServerGuiFocusAdapter
+CL: t net/minecraft/server/block/TntBlock
+CL: u net/minecraft/unknown/EmptyAnimal
+CL: v net/minecraft/server/network/packet/PlayerPositionPacket
+CL: w net/minecraft/server/network/packet/MapDataPacket
+CL: x net/minecraft/server/client/sound/step/SandStepSound
+CL: y net/minecraft/server/entity/PlayerInstance
+CL: z net/minecraft/server/block/PortalBlock
+FD: af/a net/minecraft/server/command/ServerCommand/command
+FD: af/b net/minecraft/server/command/ServerCommand/commandListener
+FD: bq/a net/minecraft/server/ServerApplicationThread/server
+FD: br/a net/minecraft/server/ConvertProgressUpdater/server
+FD: br/b net/minecraft/server/ConvertProgressUpdater/lastTimeMillis
+FD: bs/a net/minecraft/server/command/CommandReaderThread/server
+FD: cu/a net/minecraft/server/network/NetworkListenThread/logger
+FD: cu/c net/minecraft/server/network/NetworkListenThread/server
+FD: cu/d net/minecraft/server/network/NetworkListenThread/serverSocket
+FD: cu/e net/minecraft/server/network/NetworkListenThread/networkAcceptThread
+FD: cu/g net/minecraft/server/network/NetworkListenThread/pendingConnections
+FD: cu/h net/minecraft/server/network/NetworkListenThread/playerList
+FD: cv/a net/minecraft/server/LoginVerifierThread/loginPacket
+FD: cv/b net/minecraft/server/LoginVerifierThread/loginHandler
+FD: dl/a net/minecraft/server/entity/PlayerEntityMP/playerNetServerHandler
+FD: dl/b net/minecraft/server/entity/PlayerEntityMP/server
+FD: dl/bL net/minecraft/server/entity/PlayerEntityMP/lastHealth
+FD: dl/bM net/minecraft/server/entity/PlayerEntityMP/ticksOfInvulnerability
+FD: dl/bN net/minecraft/server/entity/PlayerEntityMP/playerInventory
+FD: dl/bO net/minecraft/server/entity/PlayerEntityMP/currentWindowId
+FD: dl/c net/minecraft/server/entity/PlayerEntityMP/itemEntityManager
+FD: dl/f net/minecraft/server/entity/PlayerEntityMP/loadedChunks
+FD: dl/h net/minecraft/server/entity/PlayerEntityMP/isChangingQuantityOnly
+FD: dm/a net/minecraft/server/world/WorldManager/server
+FD: dp/C net/minecraft/server/world/ServerWorld/serverChunkProvider
+FD: dp/E net/minecraft/server/world/ServerWorld/levelSaving
+FD: dp/F net/minecraft/server/world/ServerWorld/server
+FD: dp/G net/minecraft/server/world/ServerWorld/mcHash
+FD: dq/a net/minecraft/server/entity/PlayerNBTManager/logger
+FD: dq/b net/minecraft/server/entity/PlayerNBTManager/worldDir
+FD: dq/c net/minecraft/server/entity/PlayerNBTManager/worldFile
+FD: dx/a net/minecraft/server/entity/PlayerHash/hashes
+FD: dx/b net/minecraft/server/entity/PlayerHash/hashCount
+FD: dx/c net/minecraft/server/entity/PlayerHash/capacity
+FD: dx/d net/minecraft/server/entity/PlayerHash/percentUsable
+FD: ee/a net/minecraft/server/network/ServerLoginHandler/logger
+FD: ee/b net/minecraft/server/network/ServerLoginHandler/networkManager
+FD: ee/c net/minecraft/server/network/ServerLoginHandler/isDoneProcessing
+FD: ee/d net/minecraft/server/network/ServerLoginHandler/random
+FD: ee/e net/minecraft/server/network/ServerLoginHandler/server
+FD: ee/f net/minecraft/server/network/ServerLoginHandler/loginTimer
+FD: ee/g net/minecraft/server/network/ServerLoginHandler/username
+FD: ee/h net/minecraft/server/network/ServerLoginHandler/loginPacket
+FD: ee/i net/minecraft/server/network/ServerLoginHandler/serverId
+FD: em/D net/minecraft/server/entity/PlayerEntity/timeUntilPortal
+FD: em/E net/minecraft/server/entity/PlayerEntity/inPortal
+FD: em/F net/minecraft/server/entity/PlayerEntity/timeInPortal
+FD: em/G net/minecraft/server/entity/PlayerEntity/fishEntity
+FD: em/d net/minecraft/server/entity/PlayerEntity/damageRemainder
+FD: em/i net/minecraft/server/entity/PlayerEntity/inventory
+FD: em/m net/minecraft/server/entity/PlayerEntity/score
+FD: em/p net/minecraft/server/entity/PlayerEntity/isSwinging
+FD: em/q net/minecraft/server/entity/PlayerEntity/swingProgressInt
+FD: em/r net/minecraft/server/entity/PlayerEntity/username
+FD: em/s net/minecraft/server/entity/PlayerEntity/dimension
+FD: em/z net/minecraft/server/entity/PlayerEntity/sleeping
+FD: ev/a net/minecraft/server/gui/ConsoleLogManager/logger
+FD: fc/a net/minecraft/server/ServerConfigurationManager/logger
+FD: fc/b net/minecraft/server/ServerConfigurationManager/players
+FD: fc/c net/minecraft/server/ServerConfigurationManager/server
+FD: fc/d net/minecraft/server/ServerConfigurationManager/playerManager
+FD: fc/e net/minecraft/server/ServerConfigurationManager/maxPlayers
+FD: fc/f net/minecraft/server/ServerConfigurationManager/bannedPlayers
+FD: fc/g net/minecraft/server/ServerConfigurationManager/bannedIps
+FD: fc/h net/minecraft/server/ServerConfigurationManager/ops
+FD: fc/i net/minecraft/server/ServerConfigurationManager/whiteListedIps
+FD: fc/j net/minecraft/server/ServerConfigurationManager/bannedPlayersFile
+FD: fc/k net/minecraft/server/ServerConfigurationManager/ipBanFile
+FD: fc/l net/minecraft/server/ServerConfigurationManager/opFile
+FD: fc/m net/minecraft/server/ServerConfigurationManager/whitelistPlayersFile
+FD: fc/n net/minecraft/server/ServerConfigurationManager/playerNBTManager
+FD: fc/o net/minecraft/server/ServerConfigurationManager/whiteListEnforced
+FD: ff/a net/minecraft/server/entity/EntityTrackerEntry/trackedEntity
+FD: ff/b net/minecraft/server/entity/EntityTrackerEntry/trackedDistanceThreshold
+FD: ff/d net/minecraft/server/entity/EntityTrackerEntry/encodedX
+FD: ff/e net/minecraft/server/entity/EntityTrackerEntry/encodedY
+FD: ff/f net/minecraft/server/entity/EntityTrackerEntry/encodedZ
+FD: ff/g net/minecraft/server/entity/EntityTrackerEntry/encodedYaw
+FD: ff/h net/minecraft/server/entity/EntityTrackerEntry/encodedPitch
+FD: ff/i net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityMotionX
+FD: ff/j net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityMotionY
+FD: ff/k net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityMotionZ
+FD: ff/l net/minecraft/server/entity/EntityTrackerEntry/updates
+FD: ff/m net/minecraft/server/entity/EntityTrackerEntry/playerEntitiesUpdated
+FD: ff/n net/minecraft/server/entity/EntityTrackerEntry/trackedPlayers
+FD: ff/o net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityPosX
+FD: ff/p net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityPosY
+FD: ff/q net/minecraft/server/entity/EntityTrackerEntry/lastTrackedEntityPosZ
+FD: ff/r net/minecraft/server/entity/EntityTrackerEntry/firstUpdateDone
+FD: ff/s net/minecraft/server/entity/EntityTrackerEntry/shouldSendMotionUpdates
+FD: fi/a net/minecraft/server/gui/GuiLogFormatter/outputHandler
+FD: gy/a net/minecraft/server/gui/StatGuiComponent/memoryUse
+FD: gy/b net/minecraft/server/gui/StatGuiComponent/updates
+FD: gy/c net/minecraft/server/gui/StatGuiComponent/displayString
+FD: ha/a net/minecraft/server/network/ServerNetHandler/logger
+FD: ha/b net/minecraft/server/network/ServerNetHandler/networkManager
+FD: ha/c net/minecraft/server/network/ServerNetHandler/isConnectionClosed
+FD: ha/d net/minecraft/server/network/ServerNetHandler/server
+FD: ha/e net/minecraft/server/network/ServerNetHandler/playerEntity
+FD: ha/h net/minecraft/server/network/ServerNetHandler/playerAirTime
+FD: ha/j net/minecraft/server/network/ServerNetHandler/lastX
+FD: ha/k net/minecraft/server/network/ServerNetHandler/lastY
+FD: ha/l net/minecraft/server/network/ServerNetHandler/lastZ
+FD: ha/m net/minecraft/server/network/ServerNetHandler/hasMoved
+FD: he/a net/minecraft/server/world/RegionFileCache2/chunkLoadOverride
+FD: he/c net/minecraft/server/world/RegionFileCache2/dummyChunk
+FD: he/d net/minecraft/server/world/RegionFileCache2/serverChunkGenerator
+FD: he/f net/minecraft/server/world/RegionFileCache2/idToChunkMap
+FD: he/h net/minecraft/server/world/RegionFileCache2/world
+FD: hl/K net/minecraft/server/entity/LivingEntity/renderYawOffset
+FD: hl/L net/minecraft/server/entity/LivingEntity/prevRenderYawOffset
+FD: hl/R net/minecraft/server/entity/LivingEntity/texture
+FD: hl/W net/minecraft/server/entity/LivingEntity/scoreValue
+FD: hl/Y net/minecraft/server/entity/LivingEntity/isMultiplayerEntity
+FD: hl/Z net/minecraft/server/entity/LivingEntity/prevSwingProgress
+FD: hl/aA net/minecraft/server/entity/LivingEntity/moveForward
+FD: hl/aB net/minecraft/server/entity/LivingEntity/randomYawVelocity
+FD: hl/aC net/minecraft/server/entity/LivingEntity/isJumping
+FD: hl/aD net/minecraft/server/entity/LivingEntity/defaultPitch
+FD: hl/aE net/minecraft/server/entity/LivingEntity/moveSpeed
+FD: hl/aF net/minecraft/server/entity/LivingEntity/numTicksToChaseTarget
+FD: hl/aa net/minecraft/server/entity/LivingEntity/swingProgress
+FD: hl/ab net/minecraft/server/entity/LivingEntity/health
+FD: hl/ac net/minecraft/server/entity/LivingEntity/previousHealth
+FD: hl/ad net/minecraft/server/entity/LivingEntity/hurtTime
+FD: hl/ae net/minecraft/server/entity/LivingEntity/maxHurtTime
+FD: hl/af net/minecraft/server/entity/LivingEntity/attackedAtYaw
+FD: hl/ag net/minecraft/server/entity/LivingEntity/deathTime
+FD: hl/ah net/minecraft/server/entity/LivingEntity/attackTime
+FD: hl/az net/minecraft/server/entity/LivingEntity/moveStrafing
+FD: hm/a net/minecraft/server/gui/StatGuiListener/statsComponent
+FD: i/a net/minecraft/server/entity/PlayerListBox/server
+FD: i/b net/minecraft/server/entity/PlayerListBox/updates
+FD: kd/a net/minecraft/server/entity/PlayerHashEntry/key
+FD: kd/b net/minecraft/server/entity/PlayerHashEntry/value
+FD: kd/c net/minecraft/server/entity/PlayerHashEntry/nextEntry
+FD: ky/a net/minecraft/server/PropertyManager/logger
+FD: ky/b net/minecraft/server/PropertyManager/serverProperties
+FD: ky/c net/minecraft/server/PropertyManager/serverPropertiesFile
+FD: ld/a net/minecraft/server/network/NetworkAcceptThread/server
+FD: lq/aG net/minecraft/server/entity/Entity/entityId
+FD: lq/aH net/minecraft/server/entity/Entity/renderDistanceWeight
+FD: lq/aI net/minecraft/server/entity/Entity/preventEntitySpawning
+FD: lq/aJ net/minecraft/server/entity/Entity/riddenByEntity
+FD: lq/aK net/minecraft/server/entity/Entity/ridingEntity
+FD: lq/aL net/minecraft/server/entity/Entity/worldObj
+FD: lq/aM net/minecraft/server/entity/Entity/previousX
+FD: lq/aN net/minecraft/server/entity/Entity/previousY
+FD: lq/aO net/minecraft/server/entity/Entity/previousZ
+FD: lq/aP net/minecraft/server/entity/Entity/x
+FD: lq/aQ net/minecraft/server/entity/Entity/y
+FD: lq/aR net/minecraft/server/entity/Entity/z
+FD: lq/aS net/minecraft/server/entity/Entity/motionX
+FD: lq/aT net/minecraft/server/entity/Entity/motionY
+FD: lq/aU net/minecraft/server/entity/Entity/motionZ
+FD: lq/aV net/minecraft/server/entity/Entity/rotationYaw
+FD: lq/aW net/minecraft/server/entity/Entity/rotationPitch
+FD: lq/aX net/minecraft/server/entity/Entity/prevRotationYaw
+FD: lq/aY net/minecraft/server/entity/Entity/prevRotationPitch
+FD: lq/aZ net/minecraft/server/entity/Entity/boundingBox
+FD: lq/b net/minecraft/server/entity/Entity/nextStepDistance
+FD: lq/bA net/minecraft/server/entity/Entity/inWater
+FD: lq/bB net/minecraft/server/entity/Entity/heartsLife
+FD: lq/bC net/minecraft/server/entity/Entity/air
+FD: lq/bD net/minecraft/server/entity/Entity/isImmuneToFire
+FD: lq/bE net/minecraft/server/entity/Entity/dataWatcher
+FD: lq/bF net/minecraft/server/entity/Entity/entityBrightness
+FD: lq/ba net/minecraft/server/entity/Entity/onGround
+FD: lq/bb net/minecraft/server/entity/Entity/isCollidedHorizontally
+FD: lq/bc net/minecraft/server/entity/Entity/isCollidedVertically
+FD: lq/bd net/minecraft/server/entity/Entity/isCollided
+FD: lq/be net/minecraft/server/entity/Entity/beenAttacked
+FD: lq/bf net/minecraft/server/entity/Entity/isInWeb
+FD: lq/bh net/minecraft/server/entity/Entity/isDead
+FD: lq/bi net/minecraft/server/entity/Entity/yOffset
+FD: lq/bj net/minecraft/server/entity/Entity/width
+FD: lq/bk net/minecraft/server/entity/Entity/height
+FD: lq/bl net/minecraft/server/entity/Entity/prevDistanceWalkedModified
+FD: lq/bm net/minecraft/server/entity/Entity/distanceWalkedModified
+FD: lq/bn net/minecraft/server/entity/Entity/fallDistance
+FD: lq/bo net/minecraft/server/entity/Entity/lastTickPosX
+FD: lq/bp net/minecraft/server/entity/Entity/lastTickPosY
+FD: lq/bq net/minecraft/server/entity/Entity/lastTickPosZ
+FD: lq/br net/minecraft/server/entity/Entity/ySize
+FD: lq/bs net/minecraft/server/entity/Entity/stepHeight
+FD: lq/bt net/minecraft/server/entity/Entity/noClip
+FD: lq/bu net/minecraft/server/entity/Entity/entityCollisionReduction
+FD: lq/bv net/minecraft/server/entity/Entity/rand
+FD: lq/bw net/minecraft/server/entity/Entity/ticksExisted
+FD: lq/bx net/minecraft/server/entity/Entity/fireResistance
+FD: lq/by net/minecraft/server/entity/Entity/fire
+FD: lq/bz net/minecraft/server/entity/Entity/maxAir
+FD: lq/c net/minecraft/server/entity/Entity/isFirstUpdate
+FD: lq/d net/minecraft/server/entity/Entity/entityRiderPitchDelta
+FD: lq/e net/minecraft/server/entity/Entity/entityRiderYawDelta
+FD: mc/a net/minecraft/server/command/ConsoleCommandHandler/logger
+FD: mc/b net/minecraft/server/command/ConsoleCommandHandler/server
+FD: net/minecraft/server/MinecraftServer/q net/minecraft/server/MinecraftServer/running
+FD: nf/a net/minecraft/server/gui/ServerGui/logger
+FD: nf/b net/minecraft/server/gui/ServerGui/server
+FD: nl/a net/minecraft/server/entity/EntityTracker/trackedEntiies
+FD: nl/b net/minecraft/server/entity/EntityTracker/trackedEntitiesHashTable
+FD: nl/c net/minecraft/server/entity/EntityTracker/server
+FD: nl/d net/minecraft/server/entity/EntityTracker/maxTrackingDistanceThreshold
+FD: oh/a net/minecraft/server/gui/ConsoleLogFormatter/dateFormat
+FD: oo/a net/minecraft/server/entity/PlayerManager/players
+FD: oo/b net/minecraft/server/entity/PlayerManager/playerInstances
+FD: oo/c net/minecraft/server/entity/PlayerManager/playerInstancesToUpdate
+FD: oo/d net/minecraft/server/entity/PlayerManager/server
+FD: oo/f net/minecraft/server/entity/PlayerManager/playerViewRadius
+FD: ox/a net/minecraft/server/MonitorConnectionThread/networkManager
+FD: oy/a net/minecraft/network/ServerNetworkReaderThread/networkManager
+FD: oz/a net/minecraft/network/ServerNetworkWriterThread/networkManager
+FD: pu/a net/minecraft/server/ItemEntityManager/player
+FD: pu/b net/minecraft/server/ItemEntityManager/world
+FD: q/a net/minecraft/server/gui/ServerWindowAdapter/server
+FD: r/a net/minecraft/server/gui/ServerGuiCommandListener/textField
+FD: r/b net/minecraft/server/gui/ServerGuiCommandListener/serverGui
+FD: s/a net/minecraft/server/gui/ServerGuiFocusAdapter/serverGui
+FD: y/b net/minecraft/server/entity/PlayerInstance/players
+FD: y/c net/minecraft/server/entity/PlayerInstance/chunkX
+FD: y/d net/minecraft/server/entity/PlayerInstance/chunkZ
+FD: y/e net/minecraft/server/entity/PlayerInstance/currentChunk
+FD: y/f net/minecraft/server/entity/PlayerInstance/blocksToUpdate
+FD: y/g net/minecraft/server/entity/PlayerInstance/blocksToUpdateCount
+FD: y/h net/minecraft/server/entity/PlayerInstance/minX
+FD: y/i net/minecraft/server/entity/PlayerInstance/maxX
+FD: y/j net/minecraft/server/entity/PlayerInstance/minY
+FD: y/k net/minecraft/server/entity/PlayerInstance/maxY
+FD: y/l net/minecraft/server/entity/PlayerInstance/minZ
+FD: y/m net/minecraft/server/entity/PlayerInstance/maxZ
+MD: ba/a ()V net/minecraft/server/util/Vec3D/initialize ()V
+MD: bu/a ()F net/minecraft/server/client/sound/StepSound/getVolume ()F
+MD: bu/b ()F net/minecraft/server/client/sound/StepSound/getPitch ()F
+MD: bx/a ()Z net/minecraft/server/block/tileentity/MobSpawnerTileEntity/isPlayerInRange ()Z
+MD: bx/c ()V net/minecraft/server/block/tileentity/MobSpawnerTileEntity/updateDelay ()V
+MD: ce/b_ (I)V net/minecraft/server/entity/SheepEntity/setWoolColor (I)V
+MD: ct/b (I)V net/minecraft/server/world/WorldInfo/setThunderTime (I)V
+MD: ct/c (I)V net/minecraft/server/world/WorldInfo/setRainTime (I)V
+MD: ct/h ()I net/minecraft/server/world/WorldInfo/getDimension ()I
+MD: ct/k ()I net/minecraft/server/world/WorldInfo/getThunderTime ()I
+MD: ct/m ()I net/minecraft/server/world/WorldInfo/getRainTime ()I
+MD: cz/a ()V net/minecraft/server/client/render/AxisAlignedBB/clearBoundingBoxPool ()V
+MD: dj/a (IIII)Z net/minecraft/server/world/World/doChunksNearChunkExist (IIII)Z
+MD: dj/a (Ljava/lang/Class;)I net/minecraft/server/world/World/countEntities (Ljava/lang/Class;)I
+MD: dj/b (IIII)Z net/minecraft/server/world/World/setBlock (IIII)Z
+MD: dj/c (IIII)V net/minecraft/server/world/World/setBlockMetadataWithNotify (IIII)V
+MD: dj/d ()Z net/minecraft/server/world/World/isDaytime ()Z
+MD: dj/d (IIII)Z net/minecraft/server/world/World/setBlockMetadata (IIII)Z
+MD: dj/e ()V net/minecraft/server/world/World/updateEntities ()V
+MD: dj/e (IIII)Z net/minecraft/server/world/World/setBlockWithNotify (IIII)Z
+MD: dj/f (II)I net/minecraft/server/world/World/findTopSolidBlock (II)I
+MD: dj/f (III)Z net/minecraft/server/world/World/isAirBlock (III)Z
+MD: dj/f (IIII)V net/minecraft/server/world/World/notifyBlockChange (IIII)V
+MD: dj/g ()V net/minecraft/server/world/World/calculateInitialSkylight ()V
+MD: dj/g (II)Z net/minecraft/server/world/World/chunkExists (II)Z
+MD: dj/g (III)Z net/minecraft/server/world/World/blockExists (III)Z
+MD: dj/g (IIII)V net/minecraft/server/world/World/markBlocksDirtyVertical (IIII)V
+MD: dj/h ()V net/minecraft/server/world/World/tick ()V
+MD: dj/h (III)V net/minecraft/server/world/World/markBlockNeedsUpdate (III)V
+MD: dj/h (IIII)V net/minecraft/server/world/World/notifyBlocksOfNeighborChange (IIII)V
+MD: dj/i ()V net/minecraft/server/world/World/updateWeather ()V
+MD: dj/i (III)V net/minecraft/server/world/World/markBlockAsNeedsUpdate (III)V
+MD: dj/i (IIII)Z net/minecraft/server/world/World/isBlockProvidingPowerTo (IIII)Z
+MD: dj/j (III)Z net/minecraft/server/world/World/canBlockSeeTheSky (III)Z
+MD: dj/j (IIII)Z net/minecraft/server/world/World/isBlockIndirectlyProvidingPowerTo (IIII)Z
+MD: dj/k ()V net/minecraft/server/world/World/checkSessionLock ()V
+MD: dj/k (IIII)V net/minecraft/server/world/World/notifyBlockOfNeighborChange (IIII)V
+MD: dj/l ()J net/minecraft/server/world/World/getRandomSeed ()J
+MD: dj/l (III)I net/minecraft/server/world/World/getBlockLightValue (III)I
+MD: dj/m ()J net/minecraft/server/world/World/getWorldTime ()J
+MD: dj/m (III)Z net/minecraft/server/world/World/canExistingBlockSeeTheSky (III)Z
+MD: dj/o (III)V net/minecraft/server/world/World/removeBlockTileEntity (III)V
+MD: dj/q (III)Z net/minecraft/server/world/World/isBlockGettingPowered (III)Z
+MD: dj/r ()V net/minecraft/server/world/World/updateAllPlayersSleepingFlag ()V
+MD: dj/r (III)Z net/minecraft/server/world/World/isBlockIndirectlyGettingPowered (III)Z
+MD: dj/s ()V net/minecraft/server/world/World/wakeUpAllPlayers ()V
+MD: dj/t ()Z net/minecraft/server/world/World/isAllPlayersFullyAsleep ()Z
+MD: dj/w ()V net/minecraft/server/world/World/saveLevel ()V
+MD: ec/x ()I net/minecraft/server/entity/CreeperEntity/getCreeperState ()I
+MD: ej/c ()I net/minecraft/server/item/Item/getItemStackLimit ()I
+MD: ej/d ()Z net/minecraft/server/item/Item/getHasSubtypes ()Z
+MD: ej/e ()I net/minecraft/server/item/Item/getMaxDamage ()I
+MD: ej/i ()Z net/minecraft/server/item/Item/hasContainerItem ()Z
+MD: em/F ()V net/minecraft/server/entity/PlayerEntity/dropCurrentItem ()V
+MD: em/M ()Z net/minecraft/server/entity/PlayerEntity/isFullyAsleep ()Z
+MD: em/b (III)V net/minecraft/server/entity/PlayerEntity/displayCraftingTableGui (III)V
+MD: em/o ()Z net/minecraft/server/entity/PlayerEntity/isInBed ()Z
+MD: em/s ()V net/minecraft/server/entity/PlayerEntity/resetHeight ()V
+MD: em/w ()V net/minecraft/server/entity/PlayerEntity/swingItem ()V
+MD: fl/a (Lgs;)V net/minecraft/server/entity/AbstractPlayerManager/writePlayer (Lnet/minecraft/server/world/generator/BiomeGenerator;)V
+MD: fl/b (Lgs;)V net/minecraft/server/entity/AbstractPlayerManager/readPlayer (Lnet/minecraft/server/world/generator/BiomeGenerator;)V
+MD: fx/b (I)Z net/minecraft/server/inventory/PlayerInventory/consumeInventoryItem (I)Z
+MD: fx/c (I)V net/minecraft/server/inventory/PlayerInventory/damageArmor (I)V
+MD: fx/d (I)I net/minecraft/server/inventory/PlayerInventory/getInventorySlotContainItem (I)I
+MD: fx/f ()V net/minecraft/server/inventory/PlayerInventory/decrementAnimations ()V
+MD: fx/g ()I net/minecraft/server/inventory/PlayerInventory/getTotalArmorValue ()I
+MD: fx/h ()V net/minecraft/server/inventory/PlayerInventory/dropAllItems ()V
+MD: fx/k ()I net/minecraft/server/inventory/PlayerInventory/getFirstEmptyStack ()I
+MD: fy/b ()I net/minecraft/server/inventory/ItemStack/getMaxStackSize ()I
+MD: fy/d ()Z net/minecraft/server/inventory/ItemStack/isItemStackDamageable ()Z
+MD: fy/e ()Z net/minecraft/server/inventory/ItemStack/getHasSubtypes ()Z
+MD: fy/f ()Z net/minecraft/server/inventory/ItemStack/isItemDamaged ()Z
+MD: fy/g ()I net/minecraft/server/inventory/ItemStack/getItemDamageForDisplay ()I
+MD: fy/h ()I net/minecraft/server/inventory/ItemStack/getItemDamage ()I
+MD: fy/i ()I net/minecraft/server/inventory/ItemStack/getMaxDamage ()I
+MD: gt/b ()I net/minecraft/server/network/packet/Packet/getPacketId ()I
+MD: hi/d ()V net/minecraft/server/world/chunk/Chunk/onChunkLoad ()V
+MD: hi/e ()V net/minecraft/server/world/chunk/Chunk/onChunkUnload ()V
+MD: hi/f ()V net/minecraft/server/world/chunk/Chunk/setChunkModified ()V
+MD: hl/D ()Z net/minecraft/server/entity/LivingEntity/isMovementBlocked ()Z
+MD: hl/O ()V net/minecraft/server/entity/LivingEntity/jump ()V
+MD: hl/Q ()V net/minecraft/server/entity/LivingEntity/playLivingSound ()V
+MD: hl/S ()V net/minecraft/server/entity/LivingEntity/spawnExplosionParticle ()V
+MD: hl/a (FF)V net/minecraft/server/entity/LivingEntity/moveEntityWithHeading (FF)V
+MD: hl/b (I)V net/minecraft/server/entity/LivingEntity/heal (I)V
+MD: hl/b_ ()Z net/minecraft/server/entity/LivingEntity/canBreatheUnderwater ()Z
+MD: hl/c (I)V net/minecraft/server/entity/LivingEntity/damageEntity (I)V
+MD: hl/c_ ()V net/minecraft/server/entity/LivingEntity/updatePlayerActionState ()V
+MD: hl/h ()Ljava/lang/String; net/minecraft/server/entity/LivingEntity/getHurtSound ()Ljava/lang/String;
+MD: hl/v ()V net/minecraft/server/entity/LivingEntity/onLivingUpdate ()V
+MD: hp/i ()V net/minecraft/server/inventory/Inventory/onInventoryChanged ()V
+MD: hq/h ()I net/minecraft/server/entity/FishEntity/catchFish ()I
+MD: jh/g_ ()V net/minecraft/server/block/tileentity/TileEntity/updateEntity ()V
+MD: jl/a (Lki;)V net/minecraft/network/ServerNetworkManager/addToSendQueue (Lnet/minecraft/server/world/NextTickListEntry;)V
+MD: jl/f ()Z net/minecraft/network/ServerNetworkManager/sendPacket ()Z
+MD: jl/g ()Z net/minecraft/network/ServerNetworkManager/readPacket ()Z
+MD: jp/a ()V net/minecraft/server/world/WorldAccess/updateAllRenderers ()V
+MD: jp/a (IIIIII)V net/minecraft/server/world/WorldAccess/markBlockRangeNeedsUpdate (IIIIII)V
+MD: kg/h ()V net/minecraft/server/entity/PrimedTntEntity/explode ()V
+MD: ln/k ()Z net/minecraft/server/block/tileentity/FurnaceTileEntity/isBurning ()Z
+MD: ln/l ()V net/minecraft/server/block/tileentity/FurnaceTileEntity/smeltItem ()V
+MD: ln/m ()Z net/minecraft/server/block/tileentity/FurnaceTileEntity/canSmelt ()Z
+MD: lq/E ()V net/minecraft/server/entity/Entity/updateRidden ()V
+MD: lq/J ()V net/minecraft/server/entity/Entity/setEntityDead ()V
+MD: lq/K ()Z net/minecraft/server/entity/Entity/isEntityInsideOpaqueBlock ()Z
+MD: lq/P ()V net/minecraft/server/entity/Entity/setInPortal ()V
+MD: lq/R ()V net/minecraft/server/entity/Entity/onEntityUpdate ()V
+MD: lq/T ()Z net/minecraft/server/entity/Entity/isEntityAlive ()Z
+MD: lq/Y ()V net/minecraft/server/entity/Entity/kill ()V
+MD: lq/a (DDD)V net/minecraft/server/entity/Entity/moveEntity (DDD)V
+MD: lq/a (F)V net/minecraft/server/entity/Entity/fall (F)V
+MD: lq/ab ()V net/minecraft/server/entity/Entity/setOnFireFromLava ()V
+MD: lq/ad ()Z net/minecraft/server/entity/Entity/isInWater ()Z
+MD: lq/ae ()Z net/minecraft/server/entity/Entity/handleLavaMovement ()Z
+MD: lq/af ()V net/minecraft/server/entity/Entity/setBeenAttacked ()V
+MD: lq/ag ()Ljava/lang/String; net/minecraft/server/entity/Entity/getEntityString ()Ljava/lang/String;
+MD: lq/ah ()Z net/minecraft/server/entity/Entity/isSneaking ()Z
+MD: lq/b (DDD)V net/minecraft/server/entity/Entity/addVelocity (DDD)V
+MD: lq/c (DDD)V net/minecraft/server/entity/Entity/setPosition (DDD)V
+MD: lq/c (F)F net/minecraft/server/entity/Entity/getEntityBrightness (F)F
+MD: lq/d (DDD)Z net/minecraft/server/entity/Entity/isOffsetPositionInLiquid (DDD)Z
+MD: lq/d_ ()Z net/minecraft/server/entity/Entity/canBePushed ()Z
+MD: lq/e (DDD)D net/minecraft/server/entity/Entity/getDistanceSq (DDD)D
+MD: lq/f ()V net/minecraft/server/entity/Entity/updateRiderPosition ()V
+MD: lq/f (DDD)D net/minecraft/server/entity/Entity/getDistance (DDD)D
+MD: lq/f_ ()Z net/minecraft/server/entity/Entity/handleWaterMovement ()Z
+MD: lq/l_ ()Z net/minecraft/server/entity/Entity/canBeCollidedWith ()Z
+MD: lq/m_ ()V net/minecraft/server/entity/Entity/onUpdate ()V
+MD: lq/t ()F net/minecraft/server/entity/Entity/getEyeHeight ()F
+MD: na/a ()Z net/minecraft/server/block/Block/isOpaqueCube ()Z
+MD: na/a_ (I)I net/minecraft/server/block/Block/damageDropped (I)I
+MD: na/c ()I net/minecraft/server/block/Block/tickRate ()I
+MD: na/d ()Z net/minecraft/server/block/Block/canProvidePower ()Z
+MD: na/e ()I net/minecraft/server/block/Block/getMobilityFlag ()I
+MD: na/j ()F net/minecraft/server/block/Block/getHardness ()F
+MD: na/k_ ()Z net/minecraft/server/block/Block/isCollidable ()Z
+MD: na/l ()Ljava/lang/String; net/minecraft/server/block/Block/getBlockName ()Ljava/lang/String;
+MD: na/m ()Z net/minecraft/server/block/Block/getEnableStats ()Z
+MD: nj/o ()V net/minecraft/server/block/BedBlock/setBounds ()V
+MD: nw/c (I)Z net/minecraft/server/block/FlowerBlock/canThisPlantGrowOnThisBlockID (I)Z
+MD: oc/x ()Z net/minecraft/server/entity/PigEntity/getSaddled ()Z
+MD: os/c ()V net/minecraft/server/world/WorldProvider/generateLightBrightnessTable ()V
+MD: pb/c (III)I net/minecraft/server/world/BlockAccess/getBlockMetadata (III)I
+MD: pb/e (III)Z net/minecraft/server/world/BlockAccess/isBlockNormalCube (III)Z
+MD: pj/b (Ljava/lang/String;)V net/minecraft/server/client/gui/ProgressUpdate/displayLoadingString (Ljava/lang/String;)V
+MD: px/k ()I net/minecraft/server/item/FoodItem/getHealAmount ()I
